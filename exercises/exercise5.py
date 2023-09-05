@@ -7,11 +7,21 @@ def sumatoria_basico(n: int) -> int:
     Restricción: Utilizar un bucle FOR.
     """
 
+    numeros = list(range(1,n+1))
+    sum = 0
+
+    for x in numeros:
+        suma = suma + x
+    return suma
+    
 
 # NO MODIFICAR - INICIO
 assert sumatoria_basico(1) == 1
 assert sumatoria_basico(100) == 5050
 # NO MODIFICAR - FIN
+
+
+
 
 
 ###############################################################################
@@ -47,6 +57,14 @@ def multiplicar_basico(numeros: Iterable[float]) -> float:
         - Utilizar múltiples Return
         - No utilizar ELSE
     """
+
+    multiplicador = 1 
+    if numeros:
+        for x in numeros:
+            multiplicador = multiplicador * x
+    return multiplicador
+
+    return 0
 
 
 # NO MODIFICAR - INICIO
